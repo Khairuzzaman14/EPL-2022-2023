@@ -1,0 +1,14 @@
+.header {
+  font-size: 50px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  width: auto;
+  display: flex;
+}
+
+.header img {
+  height: 100px;
+  mix-blend-mode: color-burn;
+}
