@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import NavBar from "./components/NavBar";
 import Teams from "./components/Teams";
 import LeagueTable from "./components/LeagueTable";
+import Details from "./components/Details";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Navigate replace to="/fixtures" />} />
         <Route path="/teams" element={<Teams />} />
+        <Route path="teams/:item" element={<Details />} />
         <Route path="/fixtures" element={<Fixtures />} />
         <Route path="/leagueTable" element={<LeagueTable />} />
       </Routes>
