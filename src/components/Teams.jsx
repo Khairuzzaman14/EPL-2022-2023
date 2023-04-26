@@ -8,6 +8,7 @@ const Teams = () => {
     const url = "https://football-web-pages1.p.rapidapi.com/teams.json?comp=1";
 
     const res = await fetch(url, {
+      "content-type": "application/octet-stream",
       method: "GET",
       headers: {
         "X-RapidAPI-Key": "910e7f07efmsh51a592a0d9a776ep192c8ajsn6af7a77bdfaa",

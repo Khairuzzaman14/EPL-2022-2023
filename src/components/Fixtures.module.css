@@ -1,3 +1,5 @@
 .team {
-  display: flex;
+  /* display: flex; */
+  font-weight: bold;
+  color: red;
 }

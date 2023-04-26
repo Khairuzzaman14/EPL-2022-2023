@@ -4,6 +4,29 @@ import styles from "./FixturesDisplay.module.css";
 const FixturesDisplay = (props) => {
   return (
     <div className="table">
+      <div className="button">
+        <button
+          className="all"
+          type="radio"
+          onClick={props.handleAllFixtureChange}
+        >
+          All
+        </button>
+        <button
+          className="home"
+          type="radio"
+          onClick={props.handleHomeFixtureChange}
+        >
+          Home
+        </button>
+        <button
+          className="away"
+          type="radio"
+          onClick={props.handleAwayFixtureChange}
+        >
+          Away
+        </button>
+      </div>
       <table>
         <thead>
           <tr>
@@ -21,24 +44,22 @@ const FixturesDisplay = (props) => {
           </tr>
         </thead>
         <tbody>
-          {props.fixtures.map((item, key) => {
-            if (item.competition.name.includes("Premier League")) {
-              return (
-                <tr key={key}>
-                  <td>{key}</td>
-                  <td>{item.date}</td>
-                  <td>{item.venue}</td>
-                  <td>{item.attendance}</td>
-                  <td>{item.time}</td>
-                  <td>{item["home-team"].name}</td>
-                  <td>{item["away-team"].name}</td>
-                  <td>{item["home-team"]["half-time-score"]}</td>
-                  <td>{item["away-team"]["half-time-score"]}</td>
-                  <td>{item["home-team"].score}</td>
-                  <td>{item["away-team"].score}</td>
-                </tr>
-              );
-            }
+          {props.selectedFixtures.map((item, key) => {
+            return (
+              <tr key={key}>
+                <td>{key + 1}</td>
+                <td>{item.date}</td>
+                <td>{item.venue}</td>
+                <td>{item.attendance}</td>
+                <td>{item.time}</td>
+                <td>{item["home-team"].name}</td>
+                <td>{item["away-team"].name}</td>
+                <td>{item["home-team"]["half-time-score"]}</td>
+                <td>{item["away-team"]["half-time-score"]}</td>
+                <td>{item["home-team"].score}</td>
+                <td>{item["away-team"].score}</td>
+              </tr>
+            );
           })}
         </tbody>
       </table>
