@@ -12,3 +12,8 @@ th {
 td {
   text-align: center;
 }
+
+button {
+  border-radius: 20%;
+  margin: 5px;
+}
