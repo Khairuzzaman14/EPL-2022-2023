@@ -605,22 +605,15 @@ const Fixtures = () => {
     return fixture["away-team"].name === "Arsenal";
   });
 
-  const handleAllFixtureChange = (event) => {
-    console.log("all", allPremierLeagueFixtures);
+  const handleAllFixtureChange = () => {
     setFixturesToShow(allPremierLeagueFixtures);
   };
 
-  const handleHomeFixtureChange = (event) => {
-    console.log("home", homeFixtures);
-    console.log("home-selected", allPremierLeagueFixtures);
-
+  const handleHomeFixtureChange = () => {
     setFixturesToShow(homeFixtures);
   };
 
-  const handleAwayFixtureChange = (event) => {
-    console.log("away", awayFixtures);
-    console.log("away-selected", allPremierLeagueFixtures);
-
+  const handleAwayFixtureChange = () => {
     setFixturesToShow(awayFixtures);
   };
 
