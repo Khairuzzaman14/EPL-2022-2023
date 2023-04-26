@@ -49,6 +49,9 @@ const Teams = () => {
           <Link to="/manunited">Manchester United</Link>
         </li>
         <li>
+          <Link to="/newcastle">Newcastle United</Link>
+        </li>
+        <li>
           <Link to="/nottinghamforest">Nottingham Forest</Link>
         </li>
         <li>

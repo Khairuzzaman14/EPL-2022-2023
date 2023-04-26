@@ -52,6 +52,7 @@ const App = () => {
         <Route path="/liverpool" element={<LiverpoolFixtures />} />
         <Route path="/mancity" element={<ManchesterCityFixtures />} />
         <Route path="/manunited" element={<ManchesterUnitedFixtures />} />
+        <Route path="/newcastle" element={<NewcastleUnitedFixtures />} />
         <Route
           path="/nottinghamforest"
           element={<NottinghamForestFixtures />}
@@ -59,7 +60,7 @@ const App = () => {
         <Route path="/southampton" element={<SouthamptonFixtures />} />
         <Route path="/spurs" element={<TottenhamHotspurFixtures />} />
         <Route path="/westham" element={<WestHamUnitedFixtures />} />
-        <Route path="/wolves" element={<WestHamUnitedFixtures />} />
+        <Route path="/wolves" element={<WolverhamptonWonderersFixtures />} />
       </Routes>
     </div>
   );
