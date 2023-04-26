@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import FixturesDisplay from "./FixturesDisplay";
 import styles from "./Fixtures.module.css";
 
-const Fixtures = () => {
+const ArsenalFixtures = () => {
   // const matches = [
   //   {
   //     date: "2022-08-05",
@@ -649,37 +649,6 @@ const Fixtures = () => {
 
   return (
     <div className="container">
-      <div className="row">
-        <label>
-          Team:
-          <select
-            className="col-md-2"
-            value={team}
-            onChange={(e) => setTeam(e.target.value)}
-          >
-            <option value="0" key="0">
-              Pls select team
-            </option>
-            <option value="1" key="1">
-              Arsenal
-            </option>
-            {/* {fixtures.map((item) => {
-              return (
-                <option value={item} key={team}>
-                  {item.team}
-                </option>
-              );
-            })} */}
-          </select>
-        </label>
-      </div>
-      {/* {fixtures.map((item) => {
-        return <div key={item.id}>{item.date}</div>;
-      })} */}
-      {/* <div className="row">
-        <div className="col-md-3">{JSON.stringify(fixtures[0].date)}</div>
-      </div> */}
-
       <div className={styles.team}>
         <h1>Arsenal</h1>
       </div>
@@ -694,4 +663,4 @@ const Fixtures = () => {
   );
 };
 
-export default Fixtures;
+export default ArsenalFixtures;
