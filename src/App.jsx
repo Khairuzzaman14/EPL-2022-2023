@@ -4,9 +4,7 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import Fixtures from "./components/Fixtures";
 import Header from "./components/Header";
 import NavBar from "./components/NavBar";
-import Teams from "./components/Teams";
-import LeagueTable from "./components/LeagueTable";
-import Details from "./components/Details";
+import About from "./components/About";
 
 const App = () => {
   return (
@@ -17,10 +15,8 @@ const App = () => {
       <br />
       <Routes>
         <Route path="/" element={<Navigate replace to="/fixtures" />} />
-        <Route path="/teams" element={<Teams />} />
-        <Route path="teams/:item" element={<Details />} />
+        <Route path="/about" element={<About />} />
         <Route path="/fixtures" element={<Fixtures />} />
-        <Route path="/leagueTable" element={<LeagueTable />} />
       </Routes>
     </div>
   );
