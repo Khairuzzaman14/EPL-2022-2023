@@ -33,6 +33,10 @@ This is the url I used to obtain Arsenal's fixtures data, "https://football-web-
 
 The other 19 teams data had different endpoints in the url, where team=ID.
 
+## Acknowledgements
+
+I would like to thank this website, "https://www.footballwebpages.co.uk/api" for the API used.
+
 ## Live URL
 
 https://epl-2022-2023.netlify.app
