@@ -35,7 +35,7 @@ const App = () => {
       <br />
 
       <Routes>
-        <Route path="/" element={<Navigate replace to="/fixtures" />} />
+        <Route path="/" element={<Navigate replace to="/about" />} />
         <Route path="/about" element={<About />} />
         <Route path="/fixtures" element={<Teams />} />
         <Route path="/arsenal" element={<ArsenalFixtures />} />
